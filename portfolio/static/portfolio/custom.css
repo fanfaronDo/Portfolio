@@ -1,0 +1,37 @@
+.navbar-nav .nav-link {
+    color: rgb(129, 0, 0) !important;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.5) !important;
+}
+.container{
+
+    color: rgba(0,0,0,.5) !important;
+}
+.btn{
+    background-color: rgb(129, 0, 0);
+    color: rgb(255, 214, 214);
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(255, 214, 214);
+    color: rgb(129, 0, 0);
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}
