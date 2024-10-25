@@ -1,37 +1,72 @@
-.navbar-nav .nav-link {
-    color: rgb(129, 0, 0) !important;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    color: #333; 
+}
 
+.navbar-nav .nav-link {
+    color: #000000 !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.5) !important;
+    color: rgba(128, 128, 128, 0.5) !important;
 }
-.container{
 
-    color: rgba(0,0,0,.5) !important;
+.contact-field {
+    color: #000000;
 }
-.btn{
-    background-color: rgb(129, 0, 0);
-    color: rgb(255, 214, 214);
+
+.gradient-background {
+    background: linear-gradient(to right, #251e2d, #79859b); /* Adjust colors as needed */
+    padding: 20px; 
+    border-radius: 8px; 
+    color: white; 
+}
+
+.author-photo {
+    border-radius: 10%; 
+}
+
+.container {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.btn {
+    color: #FFFFFF;
+    background-color: #79859b;
     border: none;
 }
-.btn:hover{
-    background-color: rgb(255, 214, 214);
-    color: rgb(129, 0, 0);
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
 }
+
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 #blogtitle {
     font-size: 6rem;
+    color: #000000;
+}
+
+#contact-info {
+    font-size: small;
 }
 
 @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
+        color: #000000;
     }
     #blogdetailtitle {
         font-size: 5rem;
+        color: #000000;
     }
 }
+
+
+

@@ -3,13 +3,24 @@
 {% load static %}
 
 
-<div class="row justify-content-center my-3">
-    <div class="col-5 text-center">
-        <img src="{% static 'portfolio/author.JPG' %}" alt="This author's photo" class="img-fluid" width="200" height="250">
+<div class="d-flex justify-content-end gradient-background" style="margin: 0 auto; width: 100%; padding-top: 10px;">
+    
+    <div class="text-left" id="contact-info">
+        <h3>Мои контакты</h3>
+        <p>Почта: <a href="mailto:sharipsvs@mail.ru">sharipsvs@mail.ru</a></p>
+        <p>Телефон: <a href="tel:+7(922)0329690">+7(922)-032-96-90</a></p>
+        <p>Социальные сети: 
+        <a href="https://t.me/vyaches_sharip">Telegram</a>,
+        <a href="https://github.com/fanfaronDo">GitHub</a>
+        </p>
+    </div>
+    
+    <div class="text-right ml-3">
+        <img src="{% static 'portfolio/author2.png' %}" alt="This author's photo" class="img-fluid author-photo" id="toggle" width="200" height="250">
     </div>
 </div>
 
-<h2 class="mt-5">Portfolio</h2>
+<h2 class="mt-5">Мои проекты</h2>
 <hr>
         <div class="row">
             {% for project in projects %}
