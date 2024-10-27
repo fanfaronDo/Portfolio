@@ -18,20 +18,20 @@
     <div class="text-right ml-3">
         <img src="{% static 'portfolio/author.png' %}" alt="This author's photo" class="img-fluid author-photo" width="200" height="250">
     </div>
-
-
 </div>
-<h2>Мои проекты</h2>
+
+<div class="container" style="padding-top: 100px;">
+<h2 style="color: black;">Мои проекты</h2>
 <hr>
 <div class="row">
     {% for project in projects %}
     <div class="col-lg-4 col-md-6 mb-4">
-        <a href="{{ project.url }}" class="project-block">
+        <a href="{{ project.url }}" class="project-block" style="text-decoration: none;">  
             <div class="border rounded">
                 {% if project.url %}
                     <img src="{{ project.image.url }}" class="img-fluid mb-2 project-image"> 
-                    <p id="project-title">{{ project.title }}</p>
-                    <p>{{ project.description }}</p>
+                    <p style="color: rgba(0, 0, 0, 0.624);">{{ project.title }}</p>
+                    <p style="color: rgba(1, 1, 1, 0.385);">{{ project.description }}</p>
                 {% else %}
                     <img src="{{ project.image.url }}" class="img-fluid mb-2"> 
                     <p id="project-title">{{ project.title }}</p>
@@ -41,6 +41,7 @@
         </a>
     </div>
     {% endfor %}
+</div>
 </div>
 
 
